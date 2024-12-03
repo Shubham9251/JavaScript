@@ -63,4 +63,3 @@ console.log(val);
 const iceTeaPrice = 50
 
 iceTeaPrice <=50 ? console.log("purchage") : console.log("Not purchage");
-
