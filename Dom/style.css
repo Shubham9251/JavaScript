@@ -8,20 +8,24 @@ body {
     background-color: rgb(1, 45, 45);
     color: whitesmoke;
     height: 100vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center; 
+
     font-size: 4rem;
     
 }
 
-.container{
+.container1{
     border: 3px solid;
     border-radius: 20px;
     padding: 30px;
     width: 50vw;
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 15%;
 }
 
 #heading{
@@ -42,4 +46,35 @@ body {
 
 a:hover{
     background-color: aquamarine;
+}
+
+.container2{
+    /* border: 3px solid; */
+    /* border-radius: 20px; */
+    padding: 20px;
+    width: 80vw;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.boxes{
+    border: 2px solid;
+    border-radius: 20px;
+    margin-right: 50px;
+    padding: 30px;
+    text-align: center;
+
+}
+
+button{
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    margin-top: 40%;
 }

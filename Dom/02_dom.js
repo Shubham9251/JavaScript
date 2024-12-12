@@ -51,9 +51,6 @@ li.classList.add('list-items')
 
 
 
-
-
-
 // creating new unorder list
 const div = document.querySelector('.container')
 const ul2 = document.createElement('ul')
