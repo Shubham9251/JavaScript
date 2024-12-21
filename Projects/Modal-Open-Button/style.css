@@ -1,0 +1,93 @@
+/* general style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'leto', sans-serif;
+}
+
+body{
+
+    height: 100vh;
+    position: relative;
+    
+
+    background-image: url(img/background.jpeg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+#open-btn{
+position: absolute;
+top: 70%;
+left: 10%;
+width: 350px;
+height: 80px;
+font-size: 2rem;
+background: transparent;
+color: #fff;
+border: solid 3px #fff;
+border-radius: 10px;
+padding: 5px;
+box-shadow: 0 0 3px black;
+transition: .5s;
+}
+
+#open-btn:hover{
+    background-color: #fff;
+    color: black;
+}
+#modal{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation: animatemodal;
+    animation-duration: .4s;
+}
+
+#close-btn{
+    font-size: 3rem;
+}
+#close-btn{
+    cursor: pointer;
+    font-size: 3rem;
+    color: #ff0000;
+}
+
+#modal-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(1, 1, 1, 0.2);
+} 
+
+/*Mdal Animation Section*/
+
+@keyframes animatemodal {
+    from{
+        top: -300px;
+        opacity: 0;
+    }
+
+    to{
+        top: 50%;
+        opacity: 1;
+    }
+}
+
