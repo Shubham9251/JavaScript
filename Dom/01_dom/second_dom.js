@@ -47,22 +47,22 @@ a.innerText = 'Marvals';
 // class
 li.classList.add('list-items')
 // li.classList.remove('list-items')
-// console.log(li.classList.contains('list-items'));
+console.log(li.classList.contains('list-items'));
 
 
 
 // creating new unorder list
-const div = document.querySelector('.container')
-const ul2 = document.createElement('ul')
+// const div = document.querySelector('.container')
+// const ul2 = document.createElement('ul')
 
-const movieName = ["GOT", "IT", "ET", "Back to future", "Gangubai"]
+// const movieName = ["GOT", "IT", "ET", "Back to future", "Gangubai"]
 
-for (let index = 0; index < 5; index++) {
-    const li = document.createElement('li')
-    ul2.append(li)
-    li.innerText = movieName[index];   
-    li.style.color = 'black'
-    li.classList.add('list-items')
-}
+// for (let index = 0; index < 5; index++) {
+//     const li = document.createElement('li')
+//     ul2.append(li)
+//     li.innerText = movieName[index];   
+//     li.style.color = 'black'
+//     li.classList.add('list-items')
+// }
 
-div.append(ul2)
+// div.append(ul2)
