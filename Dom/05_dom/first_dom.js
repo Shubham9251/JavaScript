@@ -1,7 +1,7 @@
 // Event delegation
 
 // It allows users to append a SINGLE event listner to a parent element
-//  tgat adds it to all of its present AND future descendants that match a selector.
+//  that adds it to all of its present AND future descendants that match a selector.
 
 document.querySelector('.unordered-List').addEventListener
 ('click',function(e) {

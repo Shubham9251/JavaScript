@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+
+body{
+    height: inherit;
+    display: block;
+    height: 100vh;
+}
+
+.hed{
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+.mb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 74%;
+    width: auto;
+
+}
+
+.calc{
+    border: 2px solid;
+    border-radius: 16px;
+    width: 420px;
+    height: 480px;
+    padding: 20px 35px;
+    color: #232323;
+    flex-basis: 400px;
+}
+
+.io_screen{
+    border: 2px solid;
+    border-radius: 16px;
+    width: 100%;
+    padding: 20px;
+    text-align: right;
+    overflow: hidden;
+    font-size: 35px;
+}
+
+.calc_btn_row{
+    display: flex;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.calc_bt{
+    font-size: 25px;
+    height: 50px;
+    text-align: center;
+    font-family: inherit;
+    flex-basis: 20%;
+    border-radius: 10px;
+}

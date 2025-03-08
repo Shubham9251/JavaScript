@@ -5,6 +5,8 @@
     // 2. Target            => BUTTON
     // 3. Event Bubbling    => BUTTON -> DIV -> BODY -> HTML -> DOCUMENT
 
+    // e.stopPropagation --> to prevent event bubbling or capturing
+
 
 window.addEventListener("click",function(){
     console.log('Window');

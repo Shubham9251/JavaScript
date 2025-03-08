@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(55, 54, 54);
+            /* display: block; */
+            /* justify-content: center; */
+            /* align-items: center; */
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-size: 5rem;
+        }
+        .clock{
+            padding: 20px;
+            overflow: hidden;
+            border-radius: 10px;
+            background-color: rgb(241, 135, 60);
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            position: absolute;
+            top: 40vh;
+            left: 30vw;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Digital Clock</h1>
+
+    <div class="clock">
+
+    </div>
+
+    <script>
+
+        let clock = document.querySelector('.clock');
+
+        //seting intervel
+        setInterval(function(){
+            let date = new Date();
+
+            clock.innerHTML = date.toLocaleTimeString();
+        }, 1000)
+
+    </script>
+</body>
+</html>

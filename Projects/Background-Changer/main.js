@@ -2,7 +2,7 @@
 
 let bg = document.getElementById('background').style;
 let next = document.getElementById('forward');
-let back = document.getElementById('backward')
+let back = document.getElementById('backward');
 
 window.onload = function start() {
     slideForward();

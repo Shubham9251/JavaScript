@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Changer</title>  
+
+    <style>
+        body{
+            background-color: #808080;
+            color: white;
+            position: relative;
+        }
+
+        .start_stop{
+            position: absolute;
+            top: 300px;
+            left: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        button{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="start_stop">
+        <h1>Background Color Changer</h1>
+        <button class="start">start</button>
+        <button class="stop">stop</button>
+    </div>
+
+    <script>
+        let start = document.querySelector(".start");
+        let stopp = document.querySelector(".stop");
+        
+        let hexRange = "0123456789ABCDEF"
+        
+        function hexGenerator() {
+            var hex = "#";
+            
+            for (let index = 0; index < 6; index++) {
+
+                hex = hex.concat(hexRange.charAt(Math.floor(Math.random()*16)));
+            } 
+
+            return hex;
+        }
+
+        let interval;
+        start.addEventListener('click', function(){
+
+            let body = document.querySelector('body');
+
+            if (interval == null) {
+
+                interval = setInterval(() => {
+                
+                    let hexColor = hexGenerator();
+
+                    body.style.backgroundColor = hexColor;
+
+                }, 1000);
+            }
+            
+            
+            console.log(interval);
+        });
+        
+
+        stopp.addEventListener('click', function(){
+            
+            clearInterval(interval);
+            interval = null;
+
+        });
+
+    </script>
+</body>
+</html>
